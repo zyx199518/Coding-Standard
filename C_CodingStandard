@@ -1,0 +1,61 @@
+Coding Standard
+
+typedef int myint;
+定义函数指针类型 
+typedef void (*FunctionName_t)(int,int)  //typedef定义的需要加_t
+FunctionName_t AddNum1,AddNum2;     //
+void main()
+{
+	AddNum1 = AddNum;	
+	AddNum2 = AddNum;
+	AddNum(1,2);
+	AddNum1(1,2);
+	AddNum2(1,2);
+}
+void AddNum(int a,int b)   
+{
+	printf('%d',&(a+b));
+}
+typedef struct
+{
+	static uint8_t s_num1 = 0;
+	uint8_t g_num2 = 0;
+}StructName_t
+
+
+
+公用的类型名字需要大小写混合 首字母大写
+
+1.全局变量g_开头
+2.静态变量s_开头
+3.常量k开头大小写混合 如：kConstName
+4.变量和变量数组全小写 下划线分割
+5.成员变量在最后加一个下划线
+6.函数命令大小写混合 不用下划线
+7.枚举类型大小写混合 枚举元素需要全部大写下划线
+8.结构体变量大小写混合
+
+
+
+16位/32位编译器 
+整型          int                  int            16位  -32768 to +32767
+无符号整型    unsigned int         unsigned       16位  0 to 65,535
+短整型        short int            short          16位  -32768to+32767
+无符号短整型  unsigned short int   unsigned short 16位  0 至 65,535
+长整型        long int             long           32位  -2,147,483,648 to 2,147,483,647
+无符号长整型  unsigned long int    unsigned long  32位  0 to 4,294,967,295
+
+
+
+字符型        char                 XX              8位  -128 to 127
+无符号字符型  unsigned char        XX              8位  0 to 255
+浮点型        float                XX             32位
+双精度        double               XX             64位
+长双精度      long double          XX            128位
+
+二维指针的用法
+u8 Operation[20][3] ={0};
+u8 (*Card_Sender)[3];
+*(*(  Card_Sender) + 0) = CARDER_STEP,    *(*Card_Sender + 1) = CARDER_STEP_5,        *(*Card_Sender + 2) = 8;
+
+
