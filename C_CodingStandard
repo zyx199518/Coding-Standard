@@ -2,8 +2,8 @@ Coding Standard
 
 typedef int myint;
 定义函数指针类型 
-typedef void (*FunctionName_t)(int,int)  //typedef定义的需要加_t
-FunctionName_t AddNum1,AddNum2;     //
+typedef void (*FunctionName_t)(int,int)  //typedef定义的指针需要加_t
+FunctionName_t AddNum1,AddNum2;     //函数声明
 void main()
 {
 	AddNum1 = AddNum;	
@@ -26,16 +26,29 @@ typedef struct
 
 公用的类型名字需要大小写混合 首字母大写
 
-1.全局变量g_开头
-2.静态变量s_开头
-3.常量k开头大小写混合 如：kConstName
-4.变量和变量数组全小写 下划线分割
-5.成员变量在最后加一个下划线
-6.函数命令大小写混合 不用下划线
-7.枚举类型大小写混合 枚举元素需要全部大写下划线
+1.全局变量:variable_name_global
+2.静态变量:variable_name_static
+3.常量大小写混合:ConstName_const
+4.变量和变量数组全小写:varialbe_name,array_name[100]
+5.函数成员变量 variable_name_local
+6.函数命令大小写混合 不用下划线 A_FunctionName();TwoFunctionName();
+7.枚举类型名字大小写混合 枚举元素需要全部大写下划线:
+enum EnumTypeName
+{MON,TUE,WED,THU,FRI,SAT,SUN};
+enum EnumName day_enum;
+day_enum = MON;
 8.结构体变量大小写混合
+struct StructTypeName
+{
+int i;
+int a[100];
+};
+extern sturct StructName protocol_struct;
 
 
+
+
+sizeof(int);
 
 16位/32位编译器 
 整型          int                  int            16位  -32768 to +32767
