@@ -43,7 +43,7 @@ struct StructTypeName
 int i;
 int a[100];
 };
-extern sturct StructName protocol_struct;
+extern sturct StructTypeName protocol_struct;
 
 
 
