@@ -1,0 +1,5 @@
+void fun(char**p)
+char* a = (char*)malloc(5);
+
+/*char a[7]="djklgjn"; //单字符串*/
+char *a[3]={"asd","zxc","bnm"} //字符串数组
