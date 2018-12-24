@@ -3,3 +3,18 @@ char* a = (char*)malloc(5);
 
 /*char a[7]="djklgjn"; //单字符串*/
 char *a[3]={"asd","zxc","bnm"} //字符串数组
+
+
+
+/***********/
+	char s[10]="IV";
+	char *a[3] = {"dcg","wer","hjk" };
+	int (*p)[3];
+	int d[3] = {1,2,3};
+	p = d;
+
+	printf("%s \n",a[1]);
+	printf("%c",**a);
+
+	long int b[5] = {12345,5555,6666,7777,59797};
+/***********/
